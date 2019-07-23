@@ -17,9 +17,9 @@ class App extends React.Component {
   unsubscribeFromAuth = null;
 
   componentDidMount(){
-
+    
     const { checkUserSession } = this.props;
-    checkUserSession();
+    checkUserSession()
   }
 
   componentWillUnmount() {
@@ -47,7 +47,7 @@ class App extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser,
+  currentUser: selectCurrentUser
 })
 
 const mapDispatchToProps = dispatch => ({

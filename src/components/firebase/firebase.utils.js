@@ -75,7 +75,7 @@ export const convertCollectionsSnapshotToMap = (collections) => {
                 return init
         }, {})
 }
-
+ 
 export const getCurrentUser = () => {
         return new Promise((resolve, reject) => {
                 const unsubscribe = auth.onAuthStateChanged(userAuth => {
